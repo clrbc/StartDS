@@ -434,6 +434,7 @@ https://www.tooplate.com/view/2119-gymso-fitness
     border-radius: var(--border-radius-large);
     color: var(--white-color);
     font-weight: var(--font-weight-bold);
+    text-align: center;
     display: block;
     position: absolute;
     top: 2rem;
