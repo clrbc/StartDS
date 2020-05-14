@@ -1,3 +1,22 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-menu side="start" menuId="custom" contentId="main">
+    <ion-header>
+      <ion-toolbar color="tertiary">
+        <ion-title>Yammy</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-menu-toggle autoHide="false">
+          <ion-item [routerLink]="['/home']" routerLinkActive="router-link-active">home</ion-item>
+          <ion-item [routerLink]="['/login']" routerLinkActive="router-link-active">login</ion-item>
+          <ion-item [routerLink]="['/lanches']" routerLinkActive="router-link-active">lanches</ion-item>
+          <ion-item [routerLink]="['/bebidas']" routerLinkActive="router-link-active">bebidas</ion-item>
+          <ion-item [routerLink]="['/sobremesa']" routerLinkActive="router-link-active">sobremesa</ion-item>
+          <ion-item [routerLink]="['/sobre']" routerLinkActive="router-link-active">sobre</ion-item>
+        </ion-menu-toggle>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="main"></ion-router-outlet>
 </ion-app>
